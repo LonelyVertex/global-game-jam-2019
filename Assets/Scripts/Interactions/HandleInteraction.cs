@@ -11,7 +11,5 @@ public class HandleInteraction : Interaction
         var handle = collider.GetComponent<Handle>();
 
         handle.TriggerHandle();
-
-        Debug.Log("Triggered");
     }
 }
