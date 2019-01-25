@@ -4,7 +4,7 @@
 public class Movement : MonoBehaviour
 {
     [SerializeField]
-    float speed;
+    float speed = 5f;
 
     Rigidbody rb;
     Camera myCamera;
