@@ -1,15 +1,16 @@
 using UnityEngine;
 
+
 [RequireComponent(typeof(Rigidbody))]
 public class Movement : MonoBehaviour
 {
     [SerializeField]
-    float speed = 5f;
+    float speed = 1.4f;
 
     GameState gameState;
     Rigidbody rb;
     Camera myCamera;
-
+    Transform stairsTarget;
 
     void Start()
     {
@@ -20,6 +21,22 @@ public class Movement : MonoBehaviour
     }
 
     void FixedUpdate()
+    {
+        if (stairsTarget) {
+            HandleMoveUpstairs();
+        } else {
+            HandleMovement();
+        }
+    }
+
+    void HandleMoveUpstairs()
+    {
+        var angle = Quaternion.LookRotation(stairsTarget.position - rb.position).eulerAngles.y;
+        rb.rotation = Quaternion.Euler(0, angle, 0);
+        rb.velocity = (stairsTarget.position - rb.position).normalized * speed;
+    }
+
+    void HandleMovement()
     {
         if (!gameState.IsPlaying) return;
 
@@ -41,7 +58,16 @@ public class Movement : MonoBehaviour
         position.x = position.x - objectPos.x;
         position.y = position.y - objectPos.y;
 
-        float angle = Mathf.Atan2(position.x, position.y) * Mathf.Rad2Deg;
+        var angle = Mathf.Atan2(position.x, position.y) * Mathf.Rad2Deg;
         rb.rotation = Quaternion.Euler(0, angle, 0);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Stairs")) {
+            var stairs = other.gameObject.GetComponent<StairsTrigger>();
+            stairs.DisableStairsCollider();
+            stairsTarget = stairs.target;
+        }
     }
 }
