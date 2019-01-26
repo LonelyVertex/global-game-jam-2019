@@ -3,10 +3,16 @@
 public abstract class Interaction : MonoBehaviour
 {
     protected abstract string InteractionTag { get; }
+    protected GameState gameState;
 
     bool interactionEnabled = false;
     Collider currentCollider;
 
+
+    void Start()
+    {
+        gameState = GameState.instance;
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -35,6 +41,7 @@ public abstract class Interaction : MonoBehaviour
 
     void Update()
     {
+        if (!gameState.IsPlaying) return;
         if (!interactionEnabled) return;
 
         if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
