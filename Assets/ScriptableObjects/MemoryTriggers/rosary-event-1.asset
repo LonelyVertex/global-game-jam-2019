@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: rosary-event-1
   m_EditorClassIdentifier: 
   title: Rosary
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 161613d2f739a426e911e405e4772096, type: 3}
   texts:
   - A rosary and a very used one.
   - Someone probably did a lot of praying here.
