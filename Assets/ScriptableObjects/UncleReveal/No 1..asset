@@ -13,6 +13,17 @@ MonoBehaviour:
   m_Name: No 1.
   m_EditorClassIdentifier: 
   title: Uncle
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: b9f3cbf4e05c4bf4b86889a80b1f734a, type: 3}
   texts:
-  - WAZAAAAAP MDFK!
+  - Surprise! I'm not dead yet.
+  - '...'
+  - I don't remember your mum very well, but I remember those eyes.
+  - How many years has it been since our parents banished her?
+  - She met your father and got pregnant before marriage...
+  - which was unacceptable in our family.
+  - '...'
+  - I was a child when that happened, and I didn't know how to contact her later.
+  - This all was my last attempt to correct the past and unite our family.
+  - '...'
+  - I'm glad you came.
+  - Would you like a cup of tea? I believe you have a lot of questions.

@@ -38,7 +38,11 @@ public class Movement : MonoBehaviour
 
     void HandleMovement()
     {
-        if (!gameState.IsPlaying) return;
+        if (!gameState.IsPlaying) {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            return;
+        } 
 
         var mousePos = Input.mousePosition;
         RotateTowards(rb.position, mousePos);
