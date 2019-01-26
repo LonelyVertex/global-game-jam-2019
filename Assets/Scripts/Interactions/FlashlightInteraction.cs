@@ -5,8 +5,12 @@ public class FlashlightInteraction : MonoBehaviour
 {
     [SerializeField]
     Flashlight flashlight;
+    [SerializeField]
+    FlashlightWallAvoider wallAvoider;
 
     GameState gameState;
+
+    bool pressing;
 
     void Start()
     {
@@ -19,12 +23,19 @@ public class FlashlightInteraction : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0))
         {
-            flashlight.TurnOn();
+            pressing = true;
         }
 
         if (Input.GetKeyUp(KeyCode.F) || Input.GetMouseButtonUp(0))
         {
+            pressing = false;
+        }
+
+        if (pressing && !wallAvoider.IsNearWall) {
+            flashlight.TurnOn();
+        } else {
             flashlight.TurnOff();
         }
+
     }
 }
