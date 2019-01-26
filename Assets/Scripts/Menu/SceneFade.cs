@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class SceneFade : MonoBehaviour
 {
+    public float duration;
+
     [SerializeField]
     Image image;
 
-    [SerializeField]
-    float duration;
 
     public void FadeIn()
     {

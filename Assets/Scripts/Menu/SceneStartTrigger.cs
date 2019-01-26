@@ -6,9 +6,6 @@ using UnityEngine;
 [RequireComponent(typeof(DialogController))]
 public class SceneStartTrigger : MonoBehaviour
 {
-    [SerializeField]
-    float sceneSwitchDelay;
-
     SceneSwitcher sceneSwitcher;
     DialogController controller;
 
@@ -25,8 +22,12 @@ public class SceneStartTrigger : MonoBehaviour
 
     IEnumerator SwitchScene()
     {
-        yield return new WaitForSeconds(sceneSwitchDelay);
+        var dialog = GameObject.Find("DialogCanvas");
 
-        sceneSwitcher.Switch();
+        while (dialog.activeSelf) {
+            yield return null;
+        }
+
+        GameState.instance.NextScene();
     }
 }
