@@ -10,6 +10,6 @@ public class HandleInteraction : Interaction
     {
         var handle = collider.GetComponent<Handle>();
 
-        handle.TriggerHandle();
+        handle.Toggle();
     }
 }

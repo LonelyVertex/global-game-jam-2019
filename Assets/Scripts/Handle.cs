@@ -1,30 +1,29 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Handle : MonoBehaviour
+[RequireComponent(typeof(SphereCollider))]
+public class Handle : BinaryStateObject
 {
-    [SerializeField]
-    bool on;
-
+    public Transform leverWrapper;
     public List<Door> doors;
 
-    public void TriggerHandle()
+    public override void Toggle()
     {
+        base.Toggle();
         foreach (var door in doors) {
-            door.ToggleOpen();
+            door.Toggle();
         }
-
-        on = !on;
-        StateChanged();
     }
 
-    void StateChanged()
+    protected override void ApplyValue(float value)
     {
-        // TODO do something to change visual state of the handle
+        leverWrapper.localRotation = Quaternion.Euler(new Vector3(0, value, 0));
     }
 
-    void OnValidate()
+    void OnDrawGizmos()
     {
-        StateChanged();
+        var collider = GetComponent<SphereCollider>();
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position + collider.center, collider.radius);
     }
 }

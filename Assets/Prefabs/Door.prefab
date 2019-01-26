@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f97b7e51a8a4372a774bb79858328c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorWrapper: {fileID: 4372268772088073143}
   open: 0
+  openValue: 90
   openingSpeed: 1
-  openRotation: 90
+  doorWrapper: {fileID: 4372268772088073143}
 --- !u!1 &1807155938436218529
 GameObject:
   m_ObjectHideFlags: 0
