@@ -8,9 +8,6 @@ public class DialogController : MonoBehaviour
     [SerializeField]
     Dialog dialog;
 
-    [SerializeField]
-    float textDelay = 1.5f;
-
     GameState gameState;
     DialogHolder dialogHolder;
 
@@ -39,6 +36,8 @@ public class DialogController : MonoBehaviour
 
         var events = dialog.dialogEvents;
 
+        yield return null;
+
         foreach (var e in events)
         {
             title.text = e.title;
@@ -48,7 +47,9 @@ public class DialogController : MonoBehaviour
             {
                 description.text = t;
 
-                yield return new WaitForSeconds(textDelay);
+                while (!Input.GetMouseButtonDown(0) && !Input.GetMouseButtonDown(1) && !Input.GetKeyDown(KeyCode.E) && !Input.GetKeyDown(KeyCode.F)) {
+                    yield return null;
+                }
             }
         }
 
