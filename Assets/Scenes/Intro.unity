@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -231,36 +231,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1265304759122375727, guid: 0819b527b32e34cb0b3d67e8d255eee7,
         type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1265304759122375727, guid: 0819b527b32e34cb0b3d67e8d255eee7,
-        type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1119924159}
-    - target: {fileID: 1265304759122375727, guid: 0819b527b32e34cb0b3d67e8d255eee7,
-        type: 3}
-      propertyPath: m_PlaneDistance
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 686461930910996006, guid: 0819b527b32e34cb0b3d67e8d255eee7,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3609963369939721076, guid: 0819b527b32e34cb0b3d67e8d255eee7,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a937527a2beb54148b6e0adb8b00bb3f,
-        type: 3}
-    - target: {fileID: 1667977894345203980, guid: 0819b527b32e34cb0b3d67e8d255eee7,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: a937527a2beb54148b6e0adb8b00bb3f,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0819b527b32e34cb0b3d67e8d255eee7, type: 3}
 --- !u!20 &1119924159 stripped
@@ -372,7 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46def3b00f9e2404ca126c8a7dd47662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 0}
+  dialog: {fileID: 11400000, guid: b45788dc4124145db982bc8e02dc0012, type: 2}
   textDelay: 2
 --- !u!4 &2083179964
 Transform:
