@@ -15,6 +15,9 @@ public class GameState : MonoBehaviour
     public bool IsPlaying { get; private set; } = true;
     public bool IsShowingUI { get; private set; } = false;
 
+    public SceneFade sceneFade;
+
+
     void Awake()
     {
         if (instance == null) {
@@ -23,6 +26,11 @@ public class GameState : MonoBehaviour
         } else if (instance != this) {
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        sceneFade.FadeIn();
     }
 
     public void Play()
@@ -55,6 +63,8 @@ public class GameState : MonoBehaviour
 
     IEnumerator NextSceneDelayed()
     {
+        sceneFade.FadeOut();
+
         var sceneLoading = SceneManager.LoadSceneAsync(nextScene);
         sceneLoading.allowSceneActivation = false;
 
