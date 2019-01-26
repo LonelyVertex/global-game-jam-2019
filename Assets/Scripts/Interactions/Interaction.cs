@@ -5,6 +5,9 @@ public abstract class Interaction : MonoBehaviour
     protected abstract string InteractionTag { get; }
     protected GameState gameState;
 
+    [SerializeField]
+    PopupController popupController;
+
     bool interactionEnabled = false;
     Collider currentCollider;
 
@@ -29,14 +32,12 @@ public abstract class Interaction : MonoBehaviour
         if (!other.CompareTag(InteractionTag)) return;
 
         currentCollider = null;
-
-        ShowInteractionPopup();
         interactionEnabled = false;
     }
 
     protected void ShowInteractionPopup()
     {
-        Debug.Log("Show interaction popup!");
+        popupController.Trigger();
     }
 
     void Update()
