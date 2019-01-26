@@ -36,11 +36,12 @@ public class DialogController : MonoBehaviour
 
         var events = dialog.dialogEvents;
 
-        yield return null;
+//        yield return null;
 
         foreach (var e in events) {
             title.text = e.title;
             image.sprite = e.image;
+            description.text = "";
 
             foreach (var t in e.texts) {
                 yield return null;

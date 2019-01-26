@@ -392,8 +392,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 972177610f82845728fbe73e5f03a578, type: 3}
-    m_FontSize: 45
+    m_Font: {fileID: 12800000, guid: a937527a2beb54148b6e0adb8b00bb3f, type: 3}
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -404,8 +404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer in sapien.
-    Aenean placerat. Duis pulvinar. Praesent dapibus.
+  m_Text: 
 --- !u!1 &8007392727267273552
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +471,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 972177610f82845728fbe73e5f03a578, type: 3}
+    m_Font: {fileID: 12800000, guid: a937527a2beb54148b6e0adb8b00bb3f, type: 3}
     m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
@@ -484,7 +483,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOUR MOMS BIG DILDO
+  m_Text: 
 --- !u!1 &8552079166118391649
 GameObject:
   m_ObjectHideFlags: 0
