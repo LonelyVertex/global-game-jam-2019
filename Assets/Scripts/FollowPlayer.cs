@@ -17,7 +17,7 @@ public class FollowPlayer : MonoBehaviour
 
     void LateUpdate()
     {
-        Vector3 goalPos = target.position;
+        Vector3 goalPos = target.position + target.forward;
         goalPos.y = myTransform.position.y;
 
         myTransform.position = Vector3.SmoothDamp(transform.position, goalPos, ref velocity, dampen);
