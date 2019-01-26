@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ca02b733de0e4f4cbaf079a1a38baf5, type: 3}
-  m_Name: picture-event-1
+  m_Name: rosary-event-1
   m_EditorClassIdentifier: 
-  title: Picture
+  title: Rosary
   image: {fileID: 0}
   texts:
-  - Seems like a family photo...
-  - That girl must be my mum when she was young...
-  - '... and my grandparents? I have never seen them. /shrug'
+  - A rosary and a very used one.
+  - Someone probably did a lot of praying here.
