@@ -1663,16 +1663,28 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1667977894345203980, guid: fa57abd0e5f0d4aa4a44cf3eac55359f,
+    - target: {fileID: 3609963369939721076, guid: fa57abd0e5f0d4aa4a44cf3eac55359f,
         type: 3}
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3609963369939721076, guid: fa57abd0e5f0d4aa4a44cf3eac55359f,
         type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a937527a2beb54148b6e0adb8b00bb3f,
+        type: 3}
+    - target: {fileID: 1667977894345203980, guid: fa57abd0e5f0d4aa4a44cf3eac55359f,
+        type: 3}
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1667977894345203980, guid: fa57abd0e5f0d4aa4a44cf3eac55359f,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: a937527a2beb54148b6e0adb8b00bb3f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa57abd0e5f0d4aa4a44cf3eac55359f, type: 3}
 --- !u!43 &512105010
@@ -9072,6 +9084,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
+        type: 3}
+      propertyPath: notOpenValue
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
+        type: 3}
+      propertyPath: openValue
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
+        type: 3}
+      propertyPath: open
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1807155938392311923, guid: 1750bbf1617dc44ddb9db340d4914656,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9131,21 +9158,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
-        type: 3}
-      propertyPath: notOpenValue
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
-        type: 3}
-      propertyPath: openValue
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
-        type: 3}
-      propertyPath: open
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4372268772088073143, guid: 1750bbf1617dc44ddb9db340d4914656,
         type: 3}
@@ -15075,6 +15087,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
+        type: 3}
+      propertyPath: openValue
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
+        type: 3}
+      propertyPath: notOpenValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
+        type: 3}
+      propertyPath: open
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1807155938392311923, guid: 1750bbf1617dc44ddb9db340d4914656,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15128,21 +15155,6 @@ PrefabInstance:
     - target: {fileID: 1807155938392311923, guid: 1750bbf1617dc44ddb9db340d4914656,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
-        type: 3}
-      propertyPath: openValue
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
-        type: 3}
-      propertyPath: notOpenValue
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1807155938392311922, guid: 1750bbf1617dc44ddb9db340d4914656,
-        type: 3}
-      propertyPath: open
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4372268772088073143, guid: 1750bbf1617dc44ddb9db340d4914656,
