@@ -1,24 +1,28 @@
-﻿using UnityEngine;
-
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Movement : MonoBehaviour
 {
     [SerializeField]
-    float speed = 1.4f;
+    float speed = 5f;
 
+    GameState gameState;
     Rigidbody rb;
     Camera myCamera;
 
 
     void Start()
     {
+        gameState = GameState.instance;
+
         rb = GetComponent<Rigidbody>();
         myCamera = Camera.main;
     }
 
     void FixedUpdate()
     {
+        if (!gameState.IsPlaying) return;
+
         var mousePos = Input.mousePosition;
         RotateTowards(rb.position, mousePos);
 
