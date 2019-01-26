@@ -15,10 +15,5 @@ public class FlashlightWallAvoider : MonoBehaviour
     void Update()
     {
         IsNearWall = Physics.Raycast(flashlightTransform.position, flashlightTransform.forward, out var hit) && hit.distance < 0.5f;
-
-        if (Physics.Raycast(flashlightTransform.position, flashlightTransform.forward, out var hit2))
-        {
-            Debug.Log(hit2.collider.gameObject);
-        }
     }
 }

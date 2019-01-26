@@ -426,7 +426,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.04, y: 0.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4926631571303787912
 CanvasRenderer:
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   director: {fileID: 323153077031636483}
-  popupAnim: {fileID: 11400000, guid: 069a8f5223427409aa221c3fb7fd3914, type: 2}
+  popupAnim: {fileID: 11400000, guid: 09ab28d4a2e9042a18703a709973aef0, type: 2}
 --- !u!320 &323153077031636483
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -488,13 +488,15 @@ PlayableDirector:
   m_GameObject: {fileID: 7972651138509397465}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 069a8f5223427409aa221c3fb7fd3914, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 09ab28d4a2e9042a18703a709973aef0, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 114404491711265598, guid: 069a8f5223427409aa221c3fb7fd3914, type: 2}
+    value: {fileID: 4804990857021451745}
+  - key: {fileID: 114469160048999250, guid: 09ab28d4a2e9042a18703a709973aef0, type: 2}
     value: {fileID: 4804990857021451745}
   m_ExposedReferences:
     m_References: []
