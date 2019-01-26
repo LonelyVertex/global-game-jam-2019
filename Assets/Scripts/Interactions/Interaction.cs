@@ -41,7 +41,8 @@ public abstract class Interaction : MonoBehaviour
 
     void Update()
     {
-        if (!interactionEnabled || !gameState.IsPlaying) return;
+        if (!gameState.IsPlaying) return;
+        if (!interactionEnabled) return;
 
         if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
         {

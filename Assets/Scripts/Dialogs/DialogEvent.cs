@@ -7,6 +7,6 @@ public class DialogEvent : ScriptableObject
     public string title;
 
     [Header("Content")]
-    public Image image;
+    public Sprite image;
     public string[] texts;
 }
