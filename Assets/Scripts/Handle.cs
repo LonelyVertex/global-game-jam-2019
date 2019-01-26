@@ -26,4 +26,14 @@ public class Handle : BinaryStateObject
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position + collider.center, collider.radius);
     }
+    
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        foreach(var door in doors) {
+            if (door) {
+                Gizmos.DrawLine(transform.position, door.transform.position);
+            }
+        }
+    }
 }
