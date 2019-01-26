@@ -15,5 +15,7 @@ MonoBehaviour:
   title: Notary
   image: {fileID: 21300000, guid: 24fb9923ee3244f4c8fb79873e1e10e0, type: 3}
   texts:
-  - Well, he died, you got everything.
-  - Go there!
+  - I deeply regret to announce the sad demise of your uncle.
+  - Even though you might be surprised you had an uncle,
+  - he left you a mansion on the other side of the country in his last will.
+  - Here are the keys.
