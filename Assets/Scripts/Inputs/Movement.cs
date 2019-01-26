@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 
+
 [RequireComponent(typeof(Rigidbody))]
 public class Movement : MonoBehaviour
 {
     [SerializeField]
-    float speed = 5f;
+    float speed = 1.4f;
 
     Rigidbody rb;
     Camera myCamera;
@@ -16,23 +17,18 @@ public class Movement : MonoBehaviour
         myCamera = Camera.main;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         var mousePos = Input.mousePosition;
         RotateTowards(rb.position, mousePos);
 
-        var horizontal = Input.GetAxisRaw("Horizontal");
-        var vertical = Input.GetAxisRaw("Vertical");
+        var horizontal = Input.GetAxis("Horizontal");
+        var vertical = Input.GetAxis("Vertical");
 
         // Probably fine on keyboards, could be weird with controllers
-        var movement = new Vector3(horizontal, 0, vertical);
-        movement = movement.normalized * speed;
+        var movement = new Vector3(horizontal, 0, vertical).normalized * speed;
 
-        var position = rb.position;
-        position.x += horizontal * speed * Time.deltaTime;
-        position.z += vertical * speed * Time.deltaTime;
-
-        rb.MovePosition(position);
+        rb.velocity = movement;
     }
 
     void RotateTowards(Vector3 what, Vector2 position)
