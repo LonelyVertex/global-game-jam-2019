@@ -44,7 +44,7 @@ public abstract class Interaction : MonoBehaviour
         if (!gameState.IsPlaying) return;
         if (!interactionEnabled) return;
 
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(1))
         {
             Interact(currentCollider);
         }

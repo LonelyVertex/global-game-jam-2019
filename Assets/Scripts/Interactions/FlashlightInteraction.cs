@@ -17,12 +17,12 @@ public class FlashlightInteraction : MonoBehaviour
     {
         if (!gameState.IsPlaying) return;
 
-        if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(1))
+        if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0))
         {
             flashlight.TurnOn();
         }
 
-        if (Input.GetKeyUp(KeyCode.F) || Input.GetMouseButtonUp(1))
+        if (Input.GetKeyUp(KeyCode.F) || Input.GetMouseButtonUp(0))
         {
             flashlight.TurnOff();
         }
