@@ -25,11 +25,6 @@ public class DialogHolder : MonoBehaviour
         } else if (instance != this) {
             Destroy(gameObject);
         }
-    }
-
-    void Start()
-    {
-        gameState = GameState.instance;
 
         canvasObject = GameObject.Find("DialogCanvas");
         if (canvasObject == null) Debug.LogError("Missing DialogCanvas in scene");
@@ -39,6 +34,11 @@ public class DialogHolder : MonoBehaviour
         description = GameObject.Find("DialogDescription").GetComponent<Text>();
 
         canvasObject.SetActive(false);
+    }
+
+    void Start()
+    {
+        gameState = GameState.instance;
     }
 
     public Text GetTitle()
