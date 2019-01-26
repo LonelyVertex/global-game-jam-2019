@@ -2048,12 +2048,12 @@ PrefabInstance:
         type: 3}
       propertyPath: nextScene.m_SceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: c223e94ee9a314cdd8c5d885fa93b907,
+      objectReference: {fileID: 102900000, guid: 6cd035f497ceb4d73a1421f84c6b4d6f,
         type: 3}
     - target: {fileID: 6207901379479971687, guid: 5cd246a7aedbb4ad79f7d873f2f18ed8,
         type: 3}
       propertyPath: nextScene.m_SceneName
-      value: Menu
+      value: Level2
       objectReference: {fileID: 0}
     - target: {fileID: 6207901379479971687, guid: 5cd246a7aedbb4ad79f7d873f2f18ed8,
         type: 3}
