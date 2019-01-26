@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7903995813177440685}
   - component: {fileID: 7903995813177440686}
   - component: {fileID: 7903995813177440687}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: MemoryTrigger
   m_TagString: Memory
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 7903995814010217432}
   - component: {fileID: 7903995814010217431}
   - component: {fileID: 7903995814010217430}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
