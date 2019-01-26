@@ -68,6 +68,8 @@ public class Movement : MonoBehaviour
             var stairs = other.gameObject.GetComponent<StairsTrigger>();
             stairs.DisableStairsCollider();
             stairsTarget = stairs.target;
+
+            gameState.NextScene();
         }
     }
 }
