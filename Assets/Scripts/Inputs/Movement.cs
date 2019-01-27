@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     float speed = 1.4f;
 
     AudioSource audioSource;
+    public AudioClip movementAudio;
     bool audioPlaying = false;
 
     GameState gameState;
@@ -22,7 +23,11 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         myCamera = Camera.main;
 
-        audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.spatialBlend = 1;
+        audioSource.loop = true;
+        audioSource.volume = 0.6f;
+        audioSource.clip = movementAudio;
     }
 
     void FixedUpdate()
