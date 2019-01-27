@@ -411,7 +411,7 @@ MonoBehaviour:
   openValue: 4.125
   notOpenValue: 1.375
   openingSpeed: 1
-  openAudio: {fileID: 0}
-  closeAudio: {fileID: 0}
+  openAudio: {fileID: 8300000, guid: 03062b8c2eca61f42b398d2a7c50d56f, type: 3}
+  closeAudio: {fileID: 8300000, guid: 03062b8c2eca61f42b398d2a7c50d56f, type: 3}
   directionMask: {x: 0, y: 0, z: 1}
   doorTransform: {fileID: 1906427165}
