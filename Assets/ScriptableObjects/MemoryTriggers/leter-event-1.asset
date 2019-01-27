@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Letter
   image: {fileID: 21300000, guid: 4c487939816724af9a41a3dff4775657, type: 3}
   texts:
-  - A letter addressed to my mum...
+  - An old letter addressed to my mum...
   - '... I''m sorry how your parents feel about the situation...'
   - '... You know you can always move in with me ...'
   - What's that all about?
