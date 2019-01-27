@@ -12,14 +12,20 @@ public class FollowPlayer : MonoBehaviour
     void Start()
     {
         myTransform = GetComponent<Transform>();
-        target = GameObject.FindWithTag("Player").GetComponent<Transform>();
+
+        var player = GameObject.FindWithTag("Player");
+        if (player) {
+            target = player.GetComponent<Transform>();
+        }
     }
 
     void LateUpdate()
     {
-        Vector3 goalPos = target.position + target.forward;
-        goalPos.y = myTransform.position.y;
+        if (target != null) {
+            Vector3 goalPos = target.position + target.forward;
+            goalPos.y = myTransform.position.y;
 
-        myTransform.position = Vector3.SmoothDamp(transform.position, goalPos, ref velocity, dampen);
+            myTransform.position = Vector3.SmoothDamp(transform.position, goalPos, ref velocity, dampen);
+        }
     }
 }

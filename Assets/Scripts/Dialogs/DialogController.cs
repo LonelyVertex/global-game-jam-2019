@@ -10,6 +10,9 @@ public class DialogController : MonoBehaviour
     [SerializeField]
     Dialog dialog;
 
+    [SerializeField]
+    Achievement achievement = Achievement.None;
+
     GameState gameState;
     DialogHolder dialogHolder;
 
@@ -57,5 +60,9 @@ public class DialogController : MonoBehaviour
         dialogHolder.HideDialogCanvas();
 
         Finished = true;
+
+        if (achievement != Achievement.None) {
+            Achievements.Unlock(achievement);
+        }
     }
 }
