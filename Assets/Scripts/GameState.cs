@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameState : MonoBehaviour
 {
-    const string CURRENT_SCENE = "CURRENT_SCENE";
-
     public static GameState instance = null;
 
     public SceneField nextScene;
@@ -17,6 +15,8 @@ public class GameState : MonoBehaviour
 
     public SceneFade sceneFade;
 
+
+    bool startedSceneLoad = false;
 
     void Awake()
     {
@@ -58,6 +58,9 @@ public class GameState : MonoBehaviour
 
     public void NextScene()
     {
+        if (startedSceneLoad) return;
+
+        startedSceneLoad = true;
         StartCoroutine(NextSceneDelayed());
     }
 

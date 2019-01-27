@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class DialogController : MonoBehaviour
 {
+    public bool Finished { get; private set; }
+
     [SerializeField]
     Dialog dialog;
 
@@ -53,5 +55,7 @@ public class DialogController : MonoBehaviour
         }
 
         dialogHolder.HideDialogCanvas();
+
+        Finished = true;
     }
 }
