@@ -21,6 +21,7 @@ public abstract class BinaryStateObject : MonoBehaviour
         currentValue = DesiredValue;
         SetDesiredValue();
         audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.spatialBlend = 1;
     }
 
     public virtual void Toggle()

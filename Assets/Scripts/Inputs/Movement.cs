@@ -7,6 +7,9 @@ public class Movement : MonoBehaviour
     [SerializeField]
     float speed = 1.4f;
 
+    AudioSource audioSource;
+    bool audioPlaying = false;
+
     GameState gameState;
     Rigidbody rb;
     Camera myCamera;
@@ -18,6 +21,8 @@ public class Movement : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         myCamera = Camera.main;
+
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -42,7 +47,7 @@ public class Movement : MonoBehaviour
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
             return;
-        } 
+        }
 
         var mousePos = Input.mousePosition;
         RotateTowards(rb.position, mousePos);
@@ -52,6 +57,16 @@ public class Movement : MonoBehaviour
 
         // Probably fine on keyboards, could be weird with controllers
         var movement = new Vector3(horizontal, 0, vertical).normalized * speed;
+
+        if (movement.magnitude > 0) {
+            if (!audioPlaying) {
+                audioSource.Play();
+                audioPlaying = true;
+            }
+        } else if (audioPlaying) {
+            audioSource.Stop();
+            audioPlaying = false;
+        }
 
         rb.velocity = movement;
     }
