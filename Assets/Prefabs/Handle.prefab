@@ -249,6 +249,8 @@ MonoBehaviour:
   openValue: 30
   notOpenValue: -30
   openingSpeed: 2
+  openAudio: {fileID: 8300000, guid: feb69aa296aa18d4485612d65fb7624a, type: 3}
+  closeAudio: {fileID: 8300000, guid: b22e11594f1993e40ab2addb17f79a7a, type: 3}
   leverWrapper: {fileID: 807208538404378594}
   doors:
   - {fileID: 0}

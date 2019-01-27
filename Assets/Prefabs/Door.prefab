@@ -46,7 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: 0
   openValue: 90
+  notOpenValue: 0
   openingSpeed: 1
+  openAudio: {fileID: 8300000, guid: b6e112d1cc3dd564db85d074e6d0f8d1, type: 3}
+  closeAudio: {fileID: 8300000, guid: 81a081acb32e8c34c9cd0f8f9ae9532d, type: 3}
   doorWrapper: {fileID: 4372268772088073143}
 --- !u!1 &1807155938436218529
 GameObject:

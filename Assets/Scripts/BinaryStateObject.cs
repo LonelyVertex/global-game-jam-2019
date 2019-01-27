@@ -7,6 +7,9 @@ public abstract class BinaryStateObject : MonoBehaviour
     public float notOpenValue;
     public float openingSpeed;
 
+    public AudioClip openAudio, closeAudio;
+    AudioSource audioSource;
+
     float currentValue;
     float desiredValue;
     float t;
@@ -17,6 +20,8 @@ public abstract class BinaryStateObject : MonoBehaviour
     {
         currentValue = DesiredValue;
         SetDesiredValue();
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.spatialBlend = 1;
     }
 
     public virtual void Toggle()
@@ -24,6 +29,12 @@ public abstract class BinaryStateObject : MonoBehaviour
         open = !open;
         t = 0;
         SetDesiredValue();
+
+        if (open) {
+            audioSource.PlayOneShot(openAudio);
+        } else {
+            audioSource.PlayOneShot(closeAudio);
+        }
     }
 
     void SetDesiredValue()
