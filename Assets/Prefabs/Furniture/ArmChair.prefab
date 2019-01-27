@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8432635083246978214}
   - component: {fileID: 6594411027494857635}
   - component: {fileID: 5485040293940195783}
+  - component: {fileID: 6026178874440281063}
   m_Layer: 0
   m_Name: ArmChair
   m_TagString: Untagged
@@ -3982,3 +3983,16 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!65 &6026178874440281063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7136294885437603843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.3999999, z: 1.0000004}
+  m_Center: {x: -0.00000023841858, y: -0.00000008940696, z: -0.00000011920929}

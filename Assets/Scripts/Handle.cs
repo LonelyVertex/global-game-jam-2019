@@ -24,7 +24,7 @@ public class Handle : BinaryStateObject
     {
         var collider = GetComponent<SphereCollider>();
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position + collider.center, collider.radius);
+        Gizmos.DrawWireSphere(transform.position + transform.rotation * collider.center, collider.radius);
     }
     
     void OnDrawGizmosSelected()
