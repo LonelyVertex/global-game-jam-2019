@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1162799850249093642}
   m_Layer: 0
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 2667758074269835739}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 4811359440168293960}
   - component: {fileID: 8062933706935356229}
   - component: {fileID: 4487148160861520209}
+  - component: {fileID: 5603243377701229042}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -305,6 +306,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4096a58e9677449ec8df4bb64a02663c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5603243377701229042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2667758075859660442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ced0732eb1f64f98b04aa38aec68683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popupController: {fileID: 1296836232810764394}
 --- !u!1 &2667758075898920928
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +332,7 @@ GameObject:
   - component: {fileID: 4570008987529678383}
   m_Layer: 0
   m_Name: Flashlight
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -404,7 +418,7 @@ GameObject:
   - component: {fileID: 4804990857021451745}
   m_Layer: 0
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,7 +508,7 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 114404491711265598, guid: 069a8f5223427409aa221c3fb7fd3914, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 4804990857021451745}
   - key: {fileID: 114469160048999250, guid: 09ab28d4a2e9042a18703a709973aef0, type: 2}
     value: {fileID: 4804990857021451745}
@@ -533,7 +547,7 @@ GameObject:
   - component: {fileID: 8086823136061383078}
   m_Layer: 0
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

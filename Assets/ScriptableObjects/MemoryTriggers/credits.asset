@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0030793629bc4015ab337f7bf6f1ad4, type: 3}
+  m_Name: credits
+  m_EditorClassIdentifier: 
+  dialogEvents:
+  - {fileID: 11400000, guid: acb805b8480b946779e732186f473a4e, type: 2}

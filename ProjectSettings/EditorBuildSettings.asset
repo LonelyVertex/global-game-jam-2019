@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UncleOffice.unity
     guid: bab19da1ca1994121a77e297930a50b2
+  - enabled: 1
+    path: Assets/Scenes/ThankYouForPlaying.unity
+    guid: 88b53ec7c78e74918b985951e931e98c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: bc6764dd42a6a42f7a56eb8caf37facc,
       type: 2}
