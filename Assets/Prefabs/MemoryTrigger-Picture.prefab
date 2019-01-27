@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7903995813177440686}
   - component: {fileID: 7903995813177440687}
   m_Layer: 2
-  m_Name: MemoryTrigger
+  m_Name: MemoryTrigger-Picture
   m_TagString: Memory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: {fileID: 11400000, guid: f519c2e116c19405882e0bdfb058d317, type: 2}
-  textDelay: 2
+  achievement: 1
 --- !u!1 &7903995814010217428
 GameObject:
   m_ObjectHideFlags: 0
